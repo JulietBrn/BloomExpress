@@ -14,7 +14,13 @@
     <link rel="stylesheet" href="style.css" />
   <script defer src="public/script.js"></script></head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img class="logo-img" src="assets/svg/logo.svg" alt="Logo" />
+        </a>
+      </div>
+    </header>
     <main>
       <section class="section section-hero bg-pink">
         <div class="container section-hero__hero-container">
@@ -286,10 +292,70 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section-testimonials">
         <div class="container">
           <div class="title-wrap">
-            <h2></h2>
+            <h2>Customer Testimonials</h2>
+            <p>See what our happy customers have to say about BloomExpress!</p>
+          </div>
+          <div class="section-testimonials__wrap">
+            <div class="section-testimonials__small-gallery">
+              <div class="section-testimonials__img-wrap">
+                <img class="img-fill" src="assets/img/avatar-1.png" alt="" />
+              </div>
+              <div class="section-testimonials__img-wrap">
+                <img class="img-fill" src="assets/img/avatar-3.png" alt="" />
+              </div>
+              <div class="section-testimonials__img-wrap">
+                <img class="img-fill" src="assets/img/avatar-4.png" alt="" />
+              </div>
+              <div class="section-testimonials__img-wrap"></div>
+              <div class="section-testimonials__img-wrap">
+                <img class="img-fill" src="assets/img/avatar-2.png" alt="" />
+              </div>
+              <div class="section-testimonials__img-wrap"></div>
+              <div class="section-testimonials__img-wrap">
+                <img class="img-fill" src="assets/img/avatar-5.png" alt="" />
+              </div>
+              <div class="section-testimonials__img-wrap active">
+                <div class="empty-span text-primary fw-600 text-center">
+                  Join us!
+                </div>
+              </div>
+              <div class="section-testimonials__img-wrap">
+                <img class="img-fill" src="assets/img/avatar-6.png" alt="" />
+              </div>
+            </div>
+            <div class="testimonials text-center">
+              <div class="testimonial">
+                <p class="fw-600">
+                  "The flowers were fresh and beautiful. Delivery was prompt and
+                  the service was excellent!"
+                </p>
+                <p>- Priya S.</p>
+              </div>
+              <div class="testimonial">
+                <p class="fw-600">
+                  "BloomExpress made my anniversary special with their stunning
+                  bouquet. Highly recommend!"
+                </p>
+                <p>- Rajesh K.</p>
+              </div>
+              <div class="testimonial">
+                <p class="fw-600">
+                  "Great service and beautiful flowers. Will definitely order
+                  again!"
+                </p>
+                <p>- Anjali M.</p>
+              </div>
+              <div class="testimonial">
+                <p class="fw-600">
+                  "The bouquet was stunning and the delivery was right on time.
+                  Thank you, BloomExpress!"
+                </p>
+                <p>- Neha R.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -365,12 +431,37 @@
     </main>
 
     <footer class="footer">
-      <a href="mailto:"></a>
-      <a href="tel:+91"></a>
-      <!-- +91 XXXXX-XXXXX - Индия.
-       +55 XX XXXXX-XXXX - Бразилия. -->
-      <a href="http://" target="_blank"></a>
-    <scriptr>
+      <div class="container">
+        <a href="index.html" class="logo footer__logo">
+          <img class="logo-img" src="assets/svg/logo.svg" alt="Logo" />
+        </a>
+        <ul>
+          <li>
+            <a class="contact-link" href="mailto:bloomexpress@gmail.com">
+              <img
+                src="assets/svg/envelope.svg"
+                alt="envelope"
+              />bloomexpress@gmail.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-link" href="tel:+916989963512"
+              ><img src="assets/svg/telephone.svg" alt="envelope" />+91
+              69899-63512</a
+            >
+          </li>
+          <li>
+            <a
+              class="contact-link"
+              href="https://maps.app.goo.gl/tLUMHgpDqcpcZeZP6"
+              target="_blank"
+              ><img src="assets/svg/geo.svg" alt="geo" />Kunwar Jagdish Marg,
+              Cantonment, Lucknow, Uttar Pradesh 226012, India</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

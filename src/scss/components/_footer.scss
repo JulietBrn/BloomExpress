@@ -1,2 +1,25 @@
 .footer {
+  background: var(--dark-pink);
+  padding: 40px 0;
+  .contact-link {
+    color: var(--white-color);
+    &:hover {
+      text-decoration: underline;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__logo {
+    margin-bottom: 24px;
+  }
+}
+
+.logo {
+  width: 100px;
+  .logo-img {
+    width: 100%;
+  }
 }

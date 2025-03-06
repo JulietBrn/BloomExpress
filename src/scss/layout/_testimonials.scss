@@ -1,0 +1,33 @@
+.section-testimonials {
+  &__small-gallery {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(5, 60px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img-wrap {
+    aspect-ratio: 1/1;
+    position: relative;
+    border-radius: 25%;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    .img-fill {
+      position: absolute;
+    }
+    &:hover,
+    &.active {
+      border-color: var(--primary-color);
+    }
+  }
+  .testimonials {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 32px;
+  }
+  .empty-span {
+    padding-top: 8px;
+  }
+}

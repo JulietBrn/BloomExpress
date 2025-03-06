@@ -30,6 +30,14 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   font-family: "Roboto-VariableFont", sans-serif;
+
+  /* header */
+  --header-h: 50px;
+  --header-padding: 10px;
+  @media (min-width: $lg) {
+    --header-h: 70px;
+    --header-padding: 20px;
+  }
 }
 .hidden {
   overflow: hidden;

@@ -1,13 +1,10 @@
 .header {
-  // --header-padding: 10px;
-  // @media (min-width: $lg) {
-  //   --header-padding: 30px;
-  // }
-  // position: fixed;
-  // top: 0;
-  // z-index: 50;
-  // padding: var(--header-padding) 0;
+  position: fixed;
+  top: 0;
+  z-index: 50;
 
-  // width: 100%;
+  width: 100%;
 
+  background: var(--dark-pink);
+  padding: var(--header-padding) 0;
 }
