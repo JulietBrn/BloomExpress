@@ -1,0 +1,131 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@font-face {
+  // font-family: 'Prata';
+  // src: local('Prata');
+  // src: url(assets/font/Prata/Prata-Regular.ttf);
+}
+
+@font-face {
+  // font-family: 'Arial';
+  // src: local('Arial');
+  // src: url(assets/font/Arial.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  //   font-family: 'Arial', sans-serif;
+}
+.hidden {
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container {
+  --container-padding: 20px;
+  max-width: calc(1560px + 3 * var(--container-padding));
+  padding: 0 var(--container-padding);
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+h1,
+.h1 {
+  // font-family: 'Prata', serif;
+  font-size: 40px;
+  @media (min-width: $md) {
+    font-size: 80px;
+  }
+  font-weight: 400;
+  line-height: 120%;
+  text-wrap: balance;
+}
+
+h2,
+.h2 {
+  // font-family: 'Prata', serif;
+  font-size: 26px;
+  @media (min-width: $md) {
+    font-size: 54px;
+  }
+  font-weight: 400;
+  line-height: 110%;
+  text-wrap: balance;
+}
+
+p,
+a {
+  font-size: 16px;
+  @media (min-width: $md) {
+    font-size: 20px;
+  }
+}
+p {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 24px;
+  @media (min-width: $md) {
+    font-size: 50px;
+  }
+
+  line-height: 120%;
+}
+
+.title-wrap {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.text-center {
+  text-align: center;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+.img-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

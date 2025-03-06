@@ -1,0 +1,26 @@
+:root {
+  --white-color: #ffffff;
+
+  --gray-100: #d5c9be;
+  --gray-200: #D6D6D6;
+  --gray-400: #55565A;
+  --gray-500: #38535D;
+  --gray-600: #282829;
+  --gray-800: #222222;
+
+  --dark-color: var(--gray-800);
+  --bg-color: var(--gray-600);
+  --text-color: var(--white-color);
+  --border-color: var(--gray-100);
+  --input-border-color: var(--gray-200);
+
+  --black-color: var(--gray-600);
+  --primary-color: var(--white-color);
+  --text-secondary: var(--gray-400);
+
+  --border-radius: 4px;
+
+  /* buttons */
+  --btn-border-radius: var(--border-radius);
+  --btn-font-size: 20px;
+}
