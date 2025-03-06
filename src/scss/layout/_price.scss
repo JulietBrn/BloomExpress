@@ -1,0 +1,114 @@
+.price-card {
+  &__img-wrap {
+    aspect-ratio: 700/500;
+    position: relative;
+
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $md) {
+      &:hover .price-card__order-btn-wrap {
+        opacity: 1;
+        visibility: visible;
+        z-index: 6;
+      }
+    }
+  }
+
+  .img-fill {
+    position: absolute;
+  }
+
+  &__order-btn-wrap {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 6;
+
+    @media screen and (min-width: $md) {
+      width: 100%;
+      height: 100%;
+      z-index: -5;
+      transition: all 0.3s;
+      bottom: 0;
+      right: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(81, 0, 73, 0.708);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.section-prices {
+  padding-top: calc(var(--header-h) + 50px);
+  &__price-cards {
+    display: grid;
+    gap: 12px;
+    @media (min-width: $sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $md) {
+      gap: 32px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.section-contact {
+}
+.contact-info {
+  display: grid;
+  gap: 12px;
+  @media (min-width: $md) {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__item {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:before {
+      content: "→";
+      color: var(--primary-color);
+      line-height: 1;
+    }
+
+    .contact-link {
+      transition: all 0.3s;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+  &__img {
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    max-height: 300px;
+  }
+  &__info {
+    padding: 16px;
+    @media (min-width: $md) {
+      padding: 32px;
+    }
+    border-radius: var(--border-radius-md);
+  }
+  &__inn-wrap {
+    @media (min-width: $md) {
+      max-width: 500px;
+    }
+  }
+}
+.map {
+  max-width: 100%;
+}
+
+.bg-pink-light {
+  background: var(--light-pink);
+}

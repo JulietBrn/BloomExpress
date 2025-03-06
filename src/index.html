@@ -16,9 +16,29 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="index.html" class="logo">
-          <img class="logo-img" src="assets/svg/logo.svg" alt="Logo" />
-        </a>
+        <nav class="nav">
+          <a href="index.html" class="logo">
+            <img class="logo-img" src="assets/svg/logo.svg" alt="Logo" />
+          </a>
+
+          <ul class="nav-menu header__nav-menu">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="prices.html">Prices</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="index.html#section-form">Order</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="prices.html#delivery">Delivery</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="prices.html#contacts">Contacts</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <span class="burger-span"></span>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -147,41 +167,6 @@
           </div>
         </div>
       </section>
-      <section class="section section-special">
-        <div class="container">
-          <div class="section-special__grid">
-            <div class="section-speacial__contents">
-              <h2>
-                Large
-                <span class="text-primary">Flower</span> Arrangements
-              </h2>
-              <p>
-                Large flower arrangements are our special offer from
-                BloomExpress for decorating and decorating your holidays and
-                important events
-              </p>
-              <ul class="list-events">
-                <li>
-                  🌺Perfect for <span class="text-primary"> weddings</span>!
-                </li>
-                <li>
-                  🌷Ideal for <span class="text-primary"> birthdays</span>!
-                </li>
-                <li>
-                  🌹Great for <span class="text-primary"> anniversaries</span>!
-                </li>
-              </ul>
-            </div>
-            <div class="section-special__img-wrap">
-              <img
-                class="img-fill"
-                src="assets/img/large.png"
-                alt="Large Flower Arrangement"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section section-contents">
         <div class="container">
           <div class="section-contents__contents">
@@ -255,39 +240,37 @@
           </div>
         </div>
       </section>
-      <section class="section section-steps">
+      <section class="section section-special">
         <div class="container">
-          <div class="title-wrap">
-            <h2>Fast & Easy Flower Delivery</h2>
-          </div>
-          <div class="steps">
-            <div class="step gallery-item">
-              <h3>1. Choose a Bouquet</h3>
-              <p>Browse our catalog and select the bouquet you like.</p>
-            </div>
-            <div class="step gallery-item">
-              <h3>2. Place an Order</h3>
-              <p>Fill out the order form with all the necessary details.</p>
-            </div>
-            <div class="step gallery-item">
-              <h3>3. Make a Payment</h3>
+          <div class="section-special__grid">
+            <div class="section-speacial__contents">
+              <h2>
+                Large
+                <span class="text-primary">Flower</span> Arrangements
+              </h2>
               <p>
-                Choose a convenient payment method and complete your purchase.
+                Large flower arrangements are our special offer from
+                BloomExpress for decorating and decorating your holidays and
+                important events
               </p>
+              <ul class="list-events">
+                <li>
+                  🌺Perfect for <span class="text-primary"> weddings</span>!
+                </li>
+                <li>
+                  🌷Ideal for <span class="text-primary"> birthdays</span>!
+                </li>
+                <li>
+                  🌹Great for <span class="text-primary"> anniversaries</span>!
+                </li>
+              </ul>
             </div>
-            <div class="step__img">
+            <div class="section-special__img-wrap">
               <img
                 class="img-fill"
-                src="assets/img/delivery.png"
-                alt="Happy people with flowers"
+                src="assets/img/large.png"
+                alt="Large Flower Arrangement"
               />
-            </div>
-            <div class="step gallery-item">
-              <h3>4. We Deliver the Flowers</h3>
-              <p>
-                Our couriers will deliver your bouquet at the specified time and
-                place.
-              </p>
             </div>
           </div>
         </div>
@@ -359,24 +342,66 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section-steps">
         <div class="container">
           <div class="title-wrap">
-            <h2></h2>
+            <h2>Fast & Easy Flower Delivery</h2>
+          </div>
+          <div class="steps">
+            <div class="step gallery-item">
+              <h3>1. Choose a Bouquet</h3>
+              <p>Browse our catalog and select the bouquet you like.</p>
+            </div>
+            <div class="step gallery-item">
+              <h3>2. Place an Order</h3>
+              <p>Fill out the order form with all the necessary details.</p>
+            </div>
+            <div class="step gallery-item">
+              <h3>3. Make a Payment</h3>
+              <p>
+                Choose a convenient payment method and complete your purchase.
+              </p>
+            </div>
+            <div class="step__img">
+              <img
+                class="img-fill"
+                src="assets/img/delivery.png"
+                alt="Happy people with flowers"
+              />
+            </div>
+            <div class="step gallery-item">
+              <h3>4. We Deliver the Flowers</h3>
+              <p>
+                Our couriers will deliver your bouquet at the specified time and
+                place.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center button-wrap">
+            <a class="button button-black" href="prices.html">Prices</a>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section-video">
         <div class="container">
           <div class="title-wrap">
-            <h2></h2>
+            <h2>How to Choose Flowers for an Arrangement Like a Pro Florist</h2>
+            <p>
+              Watch this video to learn expert tips and tricks on selecting the
+              perfect flowers for any arrangement. Enhance your floral skills
+              and create stunning bouquets with professional guidance.
+            </p>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="title-wrap">
-            <h2></h2>
+          <div class="video-container text-center">
+            <iframe
+              src="https://www.youtube.com/embed/50Whog9cZw8?si=I1Syehw3wzzWPpVj"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -432,34 +457,62 @@
 
     <footer class="footer">
       <div class="container">
-        <a href="index.html" class="logo footer__logo">
-          <img class="logo-img" src="assets/svg/logo.svg" alt="Logo" />
-        </a>
-        <ul>
-          <li>
-            <a class="contact-link" href="mailto:bloomexpress@gmail.com">
-              <img
-                src="assets/svg/envelope.svg"
-                alt="envelope"
-              />bloomexpress@gmail.com</a
+        <div class="footer__item">
+          <a href="index.html" class="logo footer__logo">
+            <img class="logo-img" src="assets/svg/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="footer__item">
+          <ul class="nav-menu footer__nav-menu">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="prices.html">Prices</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="index.html#section-form">Order</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="prices.html#delivery">Delivery</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="prices.html#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__wrap footer__item">
+          <ul class="footer__links">
+            <li>
+              <a class="contact-link" href="mailto:bloomexpress@gmail.com">
+                <img
+                  src="assets/svg/envelope.svg"
+                  alt="envelope"
+                />bloomexpress@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-link" href="tel:+916989963512"
+                ><img src="assets/svg/telephone.svg" alt="envelope" />+91
+                69899-63512</a
+              >
+            </li>
+            <li>
+              <a
+                class="contact-link"
+                href="https://maps.app.goo.gl/tLUMHgpDqcpcZeZP6"
+                target="_blank"
+                ><img src="assets/svg/geo.svg" alt="geo" />Kunwar Jagdish Marg,
+                Cantonment, Lucknow, Uttar Pradesh 226012, India</a
+              >
+            </li>
+          </ul>
+          <div class="footer__policy">
+            <a class="footer__bottom-link" href="privacy-policy.html"
+              >Privacy policy</a
             >
-          </li>
-          <li>
-            <a class="contact-link" href="tel:+916989963512"
-              ><img src="assets/svg/telephone.svg" alt="envelope" />+91
-              69899-63512</a
+            <a class="footer__bottom-link" href="terms-conditions.html"
+              >Terms of Use</a
             >
-          </li>
-          <li>
-            <a
-              class="contact-link"
-              href="https://maps.app.goo.gl/tLUMHgpDqcpcZeZP6"
-              target="_blank"
-              ><img src="assets/svg/geo.svg" alt="geo" />Kunwar Jagdish Marg,
-              Cantonment, Lucknow, Uttar Pradesh 226012, India</a
-            >
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>

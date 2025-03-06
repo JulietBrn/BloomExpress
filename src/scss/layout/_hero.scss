@@ -6,10 +6,6 @@
     position: relative;
     z-index: 5;
 
-    padding-top: calc(var(--header-h) + 50px);
-    @media (min-width: $md) {
-      padding-top: calc(var(--header-h) + 120px);
-    }
     padding-bottom: 60px;
     color: white;
   }

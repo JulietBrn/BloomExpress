@@ -155,10 +155,17 @@ a {
   }
   border-radius: var(--border-radius-md);
   &_pink {
-    background: var(--pink);
+    background: var(--light-pink);
   }
 }
 
 .text-primary {
   color: var(--primary-color);
+}
+
+section:first-child {
+  padding-top: calc(var(--header-h) + 50px);
+  @media (min-width: $md) {
+    padding-top: calc(var(--header-h) + 100px);
+  }
 }

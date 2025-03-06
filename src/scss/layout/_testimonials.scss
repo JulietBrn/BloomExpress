@@ -2,7 +2,10 @@
   &__small-gallery {
     display: grid;
     gap: 4px;
-    grid-template-columns: repeat(5, 60px);
+    grid-template-columns: repeat(5, 52px);
+    @media (min-width: $sm) {
+      grid-template-columns: repeat(5, 60px);
+    }
     align-items: center;
     justify-content: center;
   }

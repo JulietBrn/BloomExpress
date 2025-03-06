@@ -23,6 +23,7 @@
 }
 
 .button-black {
+  color: white;
   background-color: var(--black-color);
 }
 
@@ -32,4 +33,8 @@
 .btn-sm {
   padding: 10px 14px;
   width: max-content;
+}
+
+.button-wrap {
+  margin-top: 24px;
 }

@@ -3,6 +3,7 @@
   padding: 40px 0;
   .contact-link {
     color: var(--white-color);
+    margin-bottom: 12px;
     &:hover {
       text-decoration: underline;
     }
@@ -12,8 +13,32 @@
     gap: 10px;
   }
 
-  &__logo {
-    margin-bottom: 24px;
+  &__item {
+    padding: 16px;
+    &:last-child {
+      margin-top: 40px;
+    }
+  }
+
+  &__nav-menu {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  &__bottom-link {
+    color: var(--white-color);
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  &__links {
+    max-width: 600px;
+  }
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 }
 

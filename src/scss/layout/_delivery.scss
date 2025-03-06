@@ -1,0 +1,19 @@
+.section-delivery {
+  h3:not(:first-child) {
+    margin-top: 40px;
+  }
+  .section-wrapper_img {
+    background-image: url(assets/img/delivery-bg.png);
+  }
+  .delivery-info {
+    position: relative;
+    z-index: 2;
+    color: white;
+
+    max-width: 600px;
+    margin: auto;
+  }
+  &__bottom {
+    margin-top: 40px;
+  }
+}

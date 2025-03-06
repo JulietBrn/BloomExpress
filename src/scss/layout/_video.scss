@@ -1,0 +1,13 @@
+.video-container {
+  iframe {
+    max-width: 100%;
+    width: 560px;
+    aspect-ratio: 3/2;
+    height: auto;
+    @media (min-width: $sm) {
+      height: 318px;
+    }
+
+    border-radius: var(--border-radius-md);
+  }
+}

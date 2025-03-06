@@ -4,6 +4,21 @@
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  &_auto {
+    gap: 6px;
+    @media (min-width: $lg) {
+      gap: 16px;
+    }
+    .gallery-item__img-wrap {
+      aspect-ratio: auto;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .gallery-item-lg {
+    grid-column: span 2;
+  }
 }
 .gallery-item {
   padding: 8px;
@@ -38,7 +53,7 @@
   &__contents {
     display: grid;
     @media (min-width: $md) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 0.8fr 0.4fr;
     }
     @media (min-width: $xl) {
       grid-template-columns: 0.6fr 0.4fr;
@@ -46,6 +61,7 @@
   }
   &__small-gallery {
     display: grid;
+    gap: 4px;
     grid-template-columns: repeat(3, 60px);
     align-items: center;
     justify-content: center;
