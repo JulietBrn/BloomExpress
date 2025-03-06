@@ -1,0 +1,23 @@
+.section-steps {
+  .steps {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: $md) {
+      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+.step {
+  &__img {
+    max-height: 300px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    position: relative;
+    grid-column: span 2;
+    @media (max-width: $md) {
+      order: 5;
+    }
+  }
+}

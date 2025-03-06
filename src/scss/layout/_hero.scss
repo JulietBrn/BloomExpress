@@ -1,0 +1,15 @@
+.section-hero {
+  min-height: 600px;
+  background: url(assets/img/hero-bg.png) center/ cover no-repeat;
+
+  &__hero-container {
+    position: relative;
+    z-index: 5;
+
+    padding-top: 10%;
+    @media (min-width: $md) {
+      padding-top: 120px;
+    }
+    color: white;
+  }
+}
