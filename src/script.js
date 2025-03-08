@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  /* burger */
   const burger = document.querySelector(".burger");
 
   if (burger) {
@@ -9,17 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.querySelector("body");
 
     burger.addEventListener("click", () => {
-      burger.classList.toggle("burger-rotate");
-      nav.classList.toggle("nav-hidden");
-      body.classList.toggle("hidden");
+      toggleMenu();
     });
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        burger.classList.remove("burger-rotate");
-        nav.classList.remove("nav-hidden");
-        body.classList.remove("hidden");
+        closeMenu();
       });
     });
+
+    function toggleMenu() {
+      burger.classList.toggle("burger-rotate");
+      nav.classList.toggle("nav-hidden");
+      body.classList.toggle("hidden");
+    }
+
+    function closeMenu() {
+      burger.classList.remove("burger-rotate");
+      nav.classList.remove("nav-hidden");
+      body.classList.remove("hidden");
+    }
   }
 });
